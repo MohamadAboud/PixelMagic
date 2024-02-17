@@ -1,0 +1,11 @@
+version: '1'
+
+services:  
+  pixelenv:
+    image: pixelenv:latest
+    container_name: pixel-container
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - SUPER_RESOLUTION_STEPS=100
